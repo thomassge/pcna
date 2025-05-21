@@ -117,7 +117,7 @@ arp -n
 4. Echo-Request mit `netcat` an Router 2 schicken:
 
 ```bash
-echo "Hello!" | nc 10.16.0.200 7
+curl -d "Hello!" 10.16.0.200
 ```
 
 5. Antwort dokumentieren (bei Erfolg Ausgabe sichtbar).
