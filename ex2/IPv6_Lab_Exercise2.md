@@ -64,11 +64,9 @@ Diese speziellen Multicast-Adressen (Bereich `ff02::1:ffXX:XXXX`) werden aus der
 
 3. Eigenschaften und Einschränkungen des Link-local-Scopes:
 
-Nur gültig innerhalb desselben Netzsegmentes (kein Routing)
-
-Muss für jede Schnittstelle eindeutig sein (mit Zonenkennung z. B. `%eth0`)
-
-Unerlässlich für grundlegende IPv6-Kommunikation (z. B. Router Discovery)
+- Nur gültig innerhalb desselben Netzsegmentes (kein Routing)
+- Muss für jede Schnittstelle eindeutig sein (mit Zonenkennung z. B. `%eth0`)
+- Unerlässlich für grundlegende IPv6-Kommunikation (z. B. Router Discovery)
 
 4. Funktionsweise der Duplicate Address Detection (DAD):
 Vor Verwendung einer neuen IPv6-Adresse sendet das Gerät ein Neighbor Solicitation (NS) an die eigene solicited-node multicast-Adresse. Antwortet jemand (NA), ist die Adresse bereits vergeben und darf nicht genutzt werden. Ansonsten wird sie übernommen.
